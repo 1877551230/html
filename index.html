@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 告知网页的文字编码 -->
+    <meta charset="UTF-8">
+    <!-- 网页的标题 -->
+    <title>Insert title here</title>
+    <style>
+        p{
+            color:hotpink
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+<a name="name">顶部</a><br>
+<!-- 文本内容 -->
+这是我的第一个网页
+<h1>标题1</h1>
+<h6>标题6</h6>
+<p>段落文本</p>
+<p>段落文本2</p>
+<!--无序列表-->
+<ul>
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+</ul>
+<!--有序列表-->
+<ol>
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+</ol>
+<div>div内容1</div>
+<div>div内容2</div>
+<div>div的文字块,我爱java,java是我一生的追求,
+    <span style="color:orangered">扯淡...</span>
+</div>
+<div>
+    <i>斜体文字</i><br>
+    <b>加粗文字</b><br>
+    <del>删除线文字</del><br>
+    <u>下划线文字</u><br>
+</div>
+<img src="./secret.ico" width="100px" height="100px"/><br>
+<a href="login.html" target="_blank">超链接</a>
+<!--锚点--><br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<a href="#name">回到顶部</a>
+
+<table border="1px" align="center">
+    <thead>
+    <tr align="center">
+        <th>id</th>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>地址</th>
+        <th>年龄</th>
+        <th>删除</th>
+        <th>修改</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr align="center">
+      <td>1</td>
+      <td>张三</td>
+      <td>zs</td>
+      <td>亦庄</td>
+      <td>20</td>
+      <td><a href="#">删除</a></td>
+      <td><a href="#">修改</a></td>
+    </tr>
+    <tr align="center">
+        <td>2</td>
+        <td>李四</td>
+        <td>ls</td>
+        <td>海淀</td>
+        <td>21</td>
+        <td><a href="#">删除</a></td>
+        <td><a href="#">修改</a></td>
+    </tr>
+    <tr align="center">
+        <td>3</td>
+        <td>王五</td>
+        <td>ww</td>
+        <td>朝阳</td>
+        <td>22</td>
+        <td><a href="#">删除</a></td>
+        <td><a href="#">修改</a></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr align="center">
+        <td colspan="7">7个单元格合并成一个单元格</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="2">3</td>
+        <td>王五</td>
+        <td>ww</td>
+        <td>朝阳</td>
+        <td>22</td>
+        <td><a href="#">删除</a></td>
+        <td><a href="#">修改</a></td>
+    </tr>
+    <tr align="center">
+        <td>王五</td>
+        <td>ww</td>
+        <td>朝阳</td>
+        <td>22</td>
+        <td><a href="#">删除</a></td>
+        <td><a href="#">修改</a></td>
+    </tr>
+    <tfoot>
+</table>
+<div style="text-align: center; font-size-:30px;font-weight:bold;">用户登录</div>
+<table border="1" align="center">
+<form action="aa.html" method="post">
+    <tr>
+        <td>用户名</td>
+        <td>
+            <input type="text" name="userName" value="蔡徐坤"/>
+
+        </td>
+    </tr>
+    <tr>
+        <td>密码</td>
+        <td><input type="password" name="userPassord" value="zs"/> </td>
+    </tr>
+    <tr>
+        <td>性别</td>
+        <td>
+            <input type="radio" name="userSex" value="男" />男
+            <input type="radio" name="userSex" value="女" checked="checked"/>女
+        </td>
+    </tr>
+    <tr>
+        <td>爱好</td>
+        <td>
+            <input type="checkbox" name="userHobby" value="sing" checked="checked"/>唱
+            <input type="checkbox" name="userHobby" value="dance" checked="checked"/>跳
+            <input type="checkbox" name="userHobby" value="rap" checked="checked"/>rap
+            <input type="checkbox" name="userHobby" value="basketball" checked="checked"/>篮球
+        </td>
+    </tr>
+
+    <tr>
+        <td>头像</td>
+        <td>
+            <input type="file" name="userHead" />
+        </td>
+    </tr>
+    <tr>
+        <td>隐藏数据</td>
+        <td>
+            <input type="hidden" name="userHide" />
+        </td>
+    </tr>
+    <tr>
+        <td>籍贯</td>
+        <td>
+            <select name="userJiGuan">
+                <option value="北京">北京</option>
+                <option value="上海" selceted="selceted">上海</option>
+                <option value="广州">广州</option>
+                <option value="深圳">深圳</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>备注</td>
+        <td>
+            <textarea cols="20" rows="5" name="userComment"></textarea>
+        </td>
+    </tr>
+    <tr >
+        <td clospan="2" align="center">
+            <input type="button" value="提交" />
+            &nbsp;&nbsp;&nbsp;
+            <input type="reset" value="重置" />
+        </td>
+    </tr>
+</form>
+</table>
+</body>
+</html>
+<!--样式引用的方式-->
+<!--行内样式-->
+<div style="color:red">行内样式,仅在当前元素使用</div>
+<!--内部样式-->
+<p >内部样式,作用于整个当前页面</p>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
